@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Janicki Arbeitsrecht - Webdesign Konzept</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      .tilt-card {
+        transform-style: preserve-3d;
+        transition: transform 0.1s ease-out;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-primary': '#0F172B', // Tiefes Marineblau
+              'brand-light': '#F8F9FA', // Sanftes Off-white
+              'brand-accent': {
+                DEFAULT: '#D1A14D', // Elegantes Gold
+                '500': '#D1A14D',
+                '600': '#B98A3B', // Dunkleres Gold für Hover
+              },
+              'brand-gray': '#CED4DA', // Helles Grau für Fließtext im Dark Mode
+              'brand-heading': '#FFFFFF',
+              'brand-dark-text': '#212529', // Dunkler Text für helle Hintergründe
+            },
+            fontFamily: {
+              'display': ['Playfair Display', 'serif'],
+              'body': ['Montserrat', 'sans-serif'],
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
+            },
+            keyframes: {
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-light font-body text-brand-dark-text antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
