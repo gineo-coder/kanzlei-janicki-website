@@ -27,6 +27,10 @@
                 '500': '#D1A14D',
                 '600': '#B98A3B', // Dunkleres Gold für Hover
               },
+              'brand-action': {
+                DEFAULT: '#e7474d', // Kräftiges Rot für CTAs
+                '600': '#c43a40', // Dunkleres Rot für Hover
+              },
               'brand-gray': '#CED4DA', // Helles Grau für Fließtext im Dark Mode
               'brand-heading': '#FFFFFF',
               'brand-dark-text': '#212529', // Dunkler Text für helle Hintergründe
@@ -62,5 +66,24 @@
   <body class="bg-brand-light font-body text-brand-dark-text antialiased">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.tilt-card');
+        cards.forEach(card => {
+          card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const { width, height } = rect;
+            const rotateX = (y / height - 0.5) * -15; // Max 7.5 deg
+            const rotateY = (x / width - 0.5) * 15;  // Max 7.5 deg
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+          });
+          card.addEventListener('mouseleave', () => {
+            card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+          });
+        });
+      });
+    </script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface HeroSectionProps {
   onNavigate: () => void;
@@ -18,10 +18,24 @@ const ValueProp: React.FC<{ icon: JSX.Element; title: string; children: React.Re
 
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
 
   return (
-    <section className="relative bg-brand-primary text-white min-h-screen flex flex-col items-center justify-center text-center">
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(https://www.janicki-arbeitsrecht.de/files/kanzlei/janicki-kanzlei.jpg)` }} />
+    <section className="relative bg-brand-primary text-white min-h-screen flex flex-col items-center justify-center text-center overflow-hidden">
+      <div 
+        className="absolute w-full h-[120%] -top-[10%] left-0 bg-cover bg-center"
+        style={{ 
+            backgroundImage: `url(https://www.janicki-arbeitsrecht.de/files/kanzlei/janicki-kanzlei.jpg)`,
+            transform: `translateY(${offsetY * 0.5}px)`
+        }}
+       />
       <div className="absolute inset-0 bg-brand-primary opacity-70"></div>
       
       <div className="relative z-10 px-4 flex-grow flex flex-col items-center justify-center">

@@ -30,7 +30,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
           <button
             type="button"
             onClick={() => onNavigate('kontakt')}
-            className="text-white bg-brand-accent-500 hover:bg-brand-accent-600 focus:ring-4 focus:outline-none focus:ring-yellow-300/50 font-bold rounded-md text-sm px-5 py-2.5 text-center transition-colors duration-300"
+            className="text-white bg-brand-action hover:bg-brand-action-600 focus:ring-4 focus:outline-none focus:ring-red-300/50 font-bold rounded-md text-sm px-5 py-2.5 text-center transition-colors duration-300"
           >
             Kontakt
           </button>

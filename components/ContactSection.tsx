@@ -15,7 +15,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ onNavigate }) => {
         </p>
         <button
             onClick={onNavigate}
-            className="inline-flex justify-center items-center py-4 px-8 text-base font-bold text-center text-white rounded-md bg-brand-accent-500 hover:bg-brand-accent-600 focus:ring-4 focus:ring-yellow-300/50 transition-transform transform hover:scale-105"
+            className="inline-flex justify-center items-center py-4 px-8 text-base font-bold text-center text-white rounded-md bg-brand-action hover:bg-brand-action-600 focus:ring-4 focus:ring-red-300/50 transition-transform transform hover:scale-105"
         >
             Kostenlose Ersteinschätzung
         </button>

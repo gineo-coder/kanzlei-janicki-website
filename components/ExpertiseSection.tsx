@@ -8,7 +8,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) => (
-    <div className="bg-brand-primary p-8 text-center flex flex-col items-center group transition-all duration-300 hover:bg-white/5 rounded-lg">
+    <div className="bg-brand-primary p-8 text-center flex flex-col items-center group transition-all duration-300 hover:bg-white/5 rounded-lg tilt-card">
         <div className="text-brand-accent-500 mb-4 transition-transform duration-300 group-hover:scale-110">
             {icon}
         </div>

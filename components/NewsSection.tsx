@@ -1,18 +1,19 @@
 
+
 import React from 'react';
 import { NEWS_ARTICLES } from '../constants';
 import type { NewsArticle } from '../types';
 
 const ArticleCard: React.FC<{ article: NewsArticle }> = ({ article }) => (
-  <div className="bg-white/5 rounded-md overflow-hidden flex flex-col group border border-white/10 h-full">
+  <div className="bg-white/5 rounded-md overflow-hidden flex flex-col group border border-white/10 h-full tilt-card">
     <div className="overflow-hidden">
         <img className="h-56 w-full object-cover group-hover:scale-105 transition-transform duration-500" src={article.imageUrl} alt={article.title} />
     </div>
     <div className="p-6 flex flex-col flex-grow">
       <p className="text-sm text-brand-accent-500 mb-2 font-semibold uppercase tracking-wider font-body">{article.date}</p>
-      <h3 className="text-xl font-bold font-display text-brand-heading mb-3 flex-grow group-hover:text-brand-accent-500 transition-colors">{article.title}</h3>
+      <h3 className="text-xl font-bold font-display text-brand-heading mb-3 flex-grow group-hover:text-brand-action transition-colors">{article.title}</h3>
       <p className="text-brand-gray text-base mb-6 font-body">{article.excerpt}</p>
-      <a href="#" className="font-semibold text-brand-accent-500 hover:text-white self-start mt-auto font-body">
+      <a href="#" className="font-semibold text-brand-action hover:text-brand-action-600 self-start mt-auto font-body transition-colors">
         Beitrag lesen &rarr;
       </a>
     </div>
