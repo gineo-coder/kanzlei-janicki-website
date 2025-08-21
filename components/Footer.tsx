@@ -45,16 +45,16 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <h2 className="mb-6 text-sm font-semibold uppercase text-white font-body">Kontakt</h2>
               <ul className="text-gray-400 font-medium font-body">
                  <li className="mb-2">
-                    Kurfürstendamm 59,
+                    Bahnhofstr. 25
                 </li>
                  <li className="mb-4">
-                    10707 Berlin
+                    86938 Schondorf am Ammersee
                 </li>
                 <li className="mb-4">
-                  <a href="mailto:info@janicki-arbeitsrecht.de" className="hover:text-brand-accent-500 transition-colors">info@janicki-arbeitsrecht.de</a>
+                  <a href="mailto:kanzlei@janicki-arbeitsrecht.de" className="hover:text-brand-accent-500 transition-colors">kanzlei@janicki-arbeitsrecht.de</a>
                 </li>
                 <li>
-                  <a href="tel:+49303279990" className="hover:text-brand-accent-500 transition-colors">030 327 99 90</a>
+                  <a href="tel:+4981929949670" className="hover:text-brand-accent-500 transition-colors">+49 (0)8192-99 49 67-0</a>
                 </li>
               </ul>
             </div>
@@ -62,7 +62,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
         <hr className="my-6 border-gray-700 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-400 sm:text-center font-body">© 2024 <a href="#" className="hover:text-brand-accent-500 transition-colors">Janicki Arbeitsrecht</a>. Alle Rechte vorbehalten.</span>
+          <span className="text-sm text-gray-400 sm:text-center font-body">© 2025 <a href="#" className="hover:text-brand-accent-500 transition-colors">Janicki Arbeitsrecht</a>. Alle Rechte vorbehalten.</span>
           {/* Social Media Icons can be added here */}
         </div>
       </div>

@@ -21,7 +21,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
 
   return (
     <section className="relative bg-brand-primary text-white min-h-screen flex flex-col items-center justify-center text-center">
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1561042255-12c8b2a75586?q=80&w=2070&auto=format&fit=crop)` }} />
+      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(https://www.janicki-arbeitsrecht.de/files/kanzlei/janicki-kanzlei.jpg)` }} />
       <div className="absolute inset-0 bg-brand-primary opacity-70"></div>
       
       <div className="relative z-10 px-4 flex-grow flex flex-col items-center justify-center">

@@ -12,7 +12,7 @@ export const TEAM_MEMBERS: Lawyer[] = [
     name: 'Dr. Jörg Janicki',
     title: 'Rechtsanwalt',
     specialization: 'Fachanwalt für Arbeitsrecht',
-    imageUrl: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=800&auto=format&fit=crop',
+    imageUrl: 'https://www.janicki-arbeitsrecht.de/files/kanzlei/fachanwalt-dr-janicki.jpg',
   },
   {
     name: 'Jonas Jung',

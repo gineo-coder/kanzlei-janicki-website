@@ -7,7 +7,7 @@ const AboutSection: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
           <div className="relative">
              <div className="absolute -top-4 -left-4 w-full h-full border-4 border-brand-accent-500 rounded-md z-0"></div>
-             <img className="relative rounded-md shadow-xl w-full h-auto object-cover z-10" src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2132&auto=format&fit=crop" alt="Moderne Kanzleiräume" />
+             <img className="relative rounded-md shadow-xl w-full h-auto object-cover z-10" src="https://www.janicki-arbeitsrecht.de/files/kanzlei/janicki-arbeitsrecht.jpg" alt="Moderne Kanzleiräume" />
           </div>
           <div className="text-brand-dark-text">
             <h4 className="font-bold text-brand-accent-500 uppercase tracking-widest font-body">Kanzlei Janicki</h4>
