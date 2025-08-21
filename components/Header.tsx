@@ -23,8 +23,8 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
   return (
     <header className={`fixed w-full z-20 top-0 left-0 transition-all duration-300 ${isScrolled ? 'bg-brand-primary/95 backdrop-blur-lg border-b border-white/10' : 'bg-transparent'}`}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" onClick={(e) => { e.preventDefault(); onNavigate('home'); }} className="flex items-center space-x-3 rtl:space-x-reverse">
-          <span className="self-center text-3xl font-bold whitespace-nowrap font-display text-white tracking-wider">JANICKI</span>
+        <a href="#" onClick={(e) => { e.preventDefault(); onNavigate('home'); }} className="flex items-center">
+          <img src="https://www.janicki-arbeitsrecht.de/files/kanzlei/logo-joerg-janicki.png" className="h-12" alt="Janicki Arbeitsrecht Logo" />
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
