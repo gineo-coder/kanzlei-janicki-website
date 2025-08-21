@@ -12,7 +12,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="#" onClick={() => onNavigate('home')} className="flex items-center">
-              <span className="self-center text-2xl font-bold whitespace-nowrap font-display text-white">JANICKI</span>
+              <span className="self-center text-2xl font-bold whitespace-nowrap font-display text-white">KANZLEI DR. JANICKI</span>
             </a>
             <p className="mt-2 text-gray-400 max-w-xs font-body">Fachanwälte für Arbeitsrecht. <br/>Modern. Kompetent. Durchsetzungsstark.</p>
           </div>
