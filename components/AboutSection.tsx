@@ -10,8 +10,8 @@ const AboutSection: React.FC = () => {
              <img className="relative rounded-md shadow-xl w-full h-auto object-cover z-10" src="https://www.janicki-arbeitsrecht.de/files/kanzlei/janicki-arbeitsrecht.jpg" alt="Moderne Kanzleiräume" />
           </div>
           <div className="text-brand-dark-text">
-            <h4 className="font-bold text-brand-accent-500 uppercase tracking-widest font-body">Kanzlei Janicki</h4>
-            <h2 className="text-3xl lg:text-4xl font-black text-brand-dark-text font-display mt-2 mb-6">Spezialisten für Arbeitsrecht</h2>
+            <h4 className="font-bold text-brand-accent-500 uppercase tracking-widest font-body">Kanzlei Dr. Janicki</h4>
+            <h2 className="text-3xl lg:text-4xl font-black text-brand-dark-text font-display mt-2 mb-6">Fachanwälte für Arbeitsrecht</h2>
             <p className="text-gray-700 mb-6 text-lg leading-relaxed font-body">
               Wir sind eine ausschließlich auf das Arbeitsrecht spezialisierte Kanzlei. Wir beraten und vertreten Arbeitgeber, Arbeitnehmer sowie Führungskräfte und Betriebsräte in allen Fragen des individuellen und kollektiven Arbeitsrechts.
             </p>

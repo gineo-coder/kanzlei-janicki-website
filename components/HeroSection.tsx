@@ -29,7 +29,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
             Ihr Recht. Unsere Kanzlei.
         </h1>
         <p className="text-xl md:text-2xl text-brand-gray mb-8 font-light max-w-3xl mx-auto font-body">
-            Fachanwälte für Arbeitsrecht in Berlin. Kompetent. Engagiert. Auf Ihrer Seite.
+            Fachanwälte für Arbeitsrecht in Schondorf am Ammersee. Kompetent. Engagiert. Auf Ihrer Seite.
         </p>
         <button
             onClick={onNavigate}
