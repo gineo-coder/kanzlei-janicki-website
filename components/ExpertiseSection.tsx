@@ -1,4 +1,5 @@
 import React from 'https://esm.sh/react@^19.1.1';
+import { Link } from 'https://esm.sh/react-router-dom@6';
 
 interface ServiceCardProps {
   // Fix: Changed JSX.Element to React.ReactNode to resolve "Cannot find namespace 'JSX'" error.
@@ -8,7 +9,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) => (
-    <div className="bg-white p-8 text-center flex flex-col items-center group transition-all duration-300 hover:shadow-xl rounded-lg shadow-md tilt-card">
+    <div className="bg-white p-8 text-center flex flex-col items-center group transition-all duration-300 hover:shadow-xl rounded-lg shadow-md tilt-card h-full">
         <div className="text-brand-accent mb-4 transition-transform duration-300 group-hover:scale-110">
             {icon}
         </div>
@@ -65,7 +66,9 @@ const ExpertiseSection: React.FC = () => {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                    {services.map(service => (
-                       <ServiceCard key={service.title} {...service} />
+                       <Link to="/rechtsgebiete" key={service.title} className="block">
+                           <ServiceCard {...service} />
+                       </Link>
                    ))}
                 </div>
             </div>

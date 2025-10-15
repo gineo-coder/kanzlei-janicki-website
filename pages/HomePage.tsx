@@ -2,6 +2,7 @@ import React from 'https://esm.sh/react@^19.1.1';
 import HeroSection from '../components/HeroSection';
 import QuoteSection from '../components/QuoteSection';
 import AboutSection from '../components/AboutSection';
+import ExpertiseSection from '../components/ExpertiseSection';
 import TeamSection from '../components/TeamSection';
 import NewsSection from '../components/NewsSection';
 import ContactSection from '../components/ContactSection';
@@ -24,6 +25,9 @@ const HomePage: React.FC = () => {
       </div>
       <div id="kanzlei">
         <AboutSection />
+      </div>
+      <div id="expertise">
+        <ExpertiseSection />
       </div>
       <div id="rechtsanwaelte-teaser">
         <TeamSection />

@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import RechtsgebietePage from './pages/RechtsgebietePage';
 import RechtsanwaeltePage from './pages/RechtsanwaeltePage';
+import LawyerDetailPage from './pages/LawyerDetailPage';
 
 const App: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const App: React.FC = () => {
           <Route index element={<HomePage />} />
           <Route path="rechtsgebiete" element={<RechtsgebietePage />} />
           <Route path="rechtsanwaelte" element={<RechtsanwaeltePage />} />
-          {/* Weitere Routen können hier hinzugefügt werden */}
+          <Route path="rechtsanwaelte/:slug" element={<LawyerDetailPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

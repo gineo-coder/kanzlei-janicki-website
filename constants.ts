@@ -13,12 +13,16 @@ export const TEAM_MEMBERS: Lawyer[] = [
     title: 'Rechtsanwalt',
     specialization: 'Fachanwalt für Arbeitsrecht',
     imageUrl: 'https://www.janicki-arbeitsrecht.de/files/kanzlei/fachanwalt-dr-janicki.jpg',
+    slug: 'dr-joerg-janicki',
+    description: "Dr. Jörg Janicki ist Gründer und Namensgeber der Kanzlei. Mit über 20 Jahren Erfahrung als Fachanwalt für Arbeitsrecht vertritt er mit Leidenschaft und strategischem Geschick die Interessen seiner Mandanten. Sein Schwerpunkt liegt in der Beratung von Unternehmen und Führungskräften bei komplexen Restrukturierungen und Verhandlungen mit Betriebsräten."
   },
   {
     name: 'Jonas Jung',
     title: 'Rechtsanwalt',
     specialization: 'Schwerpunkt Arbeitsrecht',
     imageUrl: 'https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&auto=format&fit=crop',
+    slug: 'jonas-jung',
+    description: "Jonas Jung ist ein engagierter Rechtsanwalt mit einem klaren Fokus auf das individuelle Arbeitsrecht. Er berät insbesondere Arbeitnehmer in allen Fragen rund um Kündigung, Abfindung und Arbeitszeugnis. Seine empathische und zielstrebige Herangehensweise wird von Mandanten besonders geschätzt."
   },
 ];
 

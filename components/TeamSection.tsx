@@ -1,9 +1,10 @@
 import React from 'https://esm.sh/react@^19.1.1';
+import { Link } from 'https://esm.sh/react-router-dom@6';
 import { TEAM_MEMBERS } from '../constants';
 import type { Lawyer } from '../types';
 
 const LawyerCard: React.FC<{ lawyer: Lawyer }> = ({ lawyer }) => (
-  <div className="group text-center">
+  <Link to={`/rechtsanwaelte/${lawyer.slug}`} className="group text-center block">
     <div className="overflow-hidden rounded-md shadow-lg">
         <img 
             className="w-full h-96 object-cover object-top transform transition-transform duration-500 ease-in-out group-hover:scale-110" 
@@ -12,11 +13,11 @@ const LawyerCard: React.FC<{ lawyer: Lawyer }> = ({ lawyer }) => (
         />
     </div>
     <div className="mt-6">
-      <h3 className="text-2xl font-bold font-display text-brand-dark-text">{lawyer.name}</h3>
+      <h3 className="text-2xl font-bold font-display text-brand-dark-text group-hover:text-brand-accent transition-colors">{lawyer.name}</h3>
       <p className="text-gray-500 font-body">{lawyer.title}</p>
       <p className="mt-1 text-brand-accent font-semibold font-body">{lawyer.specialization}</p>
     </div>
-  </div>
+  </Link>
 );
 
 const TeamSection: React.FC = () => {

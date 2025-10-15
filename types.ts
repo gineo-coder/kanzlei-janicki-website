@@ -4,6 +4,8 @@ export interface Lawyer {
   title: string;
   imageUrl: string;
   specialization: string;
+  slug: string;
+  description: string;
 }
 
 export interface NewsArticle {
