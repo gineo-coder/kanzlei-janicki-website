@@ -36,11 +36,14 @@ const Header: React.FC = () => {
   }`;
 
   return (
-    <header className={`fixed w-full z-20 top-0 left-0 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-lg shadow-md' : 'bg-transparent'}`}>
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link to="/" className="flex items-center">
-           <img src="https://www.janicki-arbeitsrecht.de/files/kanzlei/logo-joerg-janicki-white.png" className={`h-14 lg:h-20 transition-opacity duration-300 ${isScrolled || !isOnHomePage ? 'opacity-0' : 'opacity-100'}`} alt="Janicki Arbeitsrecht Logo Weiß" />
-           <img src="https://www.janicki-arbeitsrecht.de/files/kanzlei/logo-joerg-janicki.png" className={`h-14 lg:h-20 transition-opacity duration-300 absolute top-1/2 left-4 -translate-y-1/2 ${isScrolled || !isOnHomePage ? 'opacity-100' : 'opacity-0'}`} alt="Janicki Arbeitsrecht Logo" />
+    <header className={`fixed w-full z-20 top-0 left-0 transition-all duration-300 ${isScrolled || !isOnHomePage ? 'bg-white/95 backdrop-blur-lg shadow-md' : 'bg-transparent'}`}>
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-6 py-4">
+        <Link to="/" className="relative flex items-center h-14 lg:h-20">
+           {/* Placeholder for space */}
+           <img src="https://www.janicki-arbeitsrecht.de/files/kanzlei/logo-joerg-janicki.png" className="h-14 lg:h-20 opacity-0" alt="" />
+           {/* Absolutely positioned logos */}
+           <img src="https://www.janicki-arbeitsrecht.de/files/kanzlei/logo-joerg-janicki-white.png" className={`h-14 lg:h-20 absolute top-0 left-0 transition-opacity duration-300 ${isScrolled || !isOnHomePage ? 'opacity-100' : 'opacity-0'}`} alt="Janicki Arbeitsrecht Logo Weiß" />
+           <img src="https://www.janicki-arbeitsrecht.de/files/kanzlei/logo-joerg-janicki.png" className={`h-14 lg:h-20 absolute top-0 left-0 transition-opacity duration-300 ${isScrolled || !isOnHomePage ? 'opacity-0' : 'opacity-100'}`} alt="Janicki Arbeitsrecht Logo" />
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button

@@ -19,10 +19,10 @@ const LawyerDetailPage: React.FC = () => {
     <>
       <section className="relative bg-brand-primary text-white h-[50vh] min-h-[400px] flex flex-col items-center justify-center text-center overflow-hidden">
         <div 
-          className="absolute w-full h-full top-0 left-0 bg-cover bg-center opacity-30"
+          className="absolute w-full h-full top-0 left-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${lawyer.imageUrl})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20"></div>
+        <div className="absolute inset-0 bg-brand-primary opacity-25"></div>
         
         <div className="relative z-10 px-4">
            <h1 className="text-5xl md:text-6xl font-black font-display leading-tight mb-2 text-white" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)' }}>
