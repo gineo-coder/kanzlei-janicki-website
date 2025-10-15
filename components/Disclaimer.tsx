@@ -1,6 +1,4 @@
-
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'https://esm.sh/react@^19.1.1';
 
 const Disclaimer: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);

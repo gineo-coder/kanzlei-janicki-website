@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React from 'https://esm.sh/react@^19.1.1';
 
 interface ServiceCardProps {
   // Fix: Changed JSX.Element to React.ReactNode to resolve "Cannot find namespace 'JSX'" error.

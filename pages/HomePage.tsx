@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'https://esm.sh/react@^19.1.1';
 import HeroSection from '../components/HeroSection';
 import QuoteSection from '../components/QuoteSection';
 import AboutSection from '../components/AboutSection';

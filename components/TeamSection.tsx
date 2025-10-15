@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'https://esm.sh/react@^19.1.1';
 import { TEAM_MEMBERS } from '../constants';
 import type { Lawyer } from '../types';
 

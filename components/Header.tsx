@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'https://esm.sh/react@^19.1.1';
+import { Link, useNavigate } from 'https://esm.sh/react-router-dom@6';
 import { NAV_LINKS } from '../constants';
 
 const Header: React.FC = () => {

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React from 'https://esm.sh/react@^19.1.1';
+import { Link, useNavigate } from 'https://esm.sh/react-router-dom@6';
 import { NAV_LINKS } from '../constants';
 
 const Footer: React.FC = () => {

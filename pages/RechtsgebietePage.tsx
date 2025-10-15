@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'https://esm.sh/react@^19.1.1';
 
 const AccordionItem: React.FC<{ title: string; children: React.ReactNode; isOpen: boolean; onClick: () => void; }> = ({ title, children, isOpen, onClick }) => {
   return (

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'https://esm.sh/react@^19.1.1';
 
 interface HeroSectionProps {
   onNavigate: () => void;

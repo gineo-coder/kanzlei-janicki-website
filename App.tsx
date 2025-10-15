@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'https://esm.sh/react@^19.1.1';
+import { BrowserRouter, Routes, Route } from 'https://esm.sh/react-router-dom@6';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import RechtsgebietePage from './pages/RechtsgebietePage';
