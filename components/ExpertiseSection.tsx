@@ -2,14 +2,15 @@
 import React from 'react';
 
 interface ServiceCardProps {
-  icon: JSX.Element;
+  // Fix: Changed JSX.Element to React.ReactNode to resolve "Cannot find namespace 'JSX'" error.
+  icon: React.ReactNode;
   title: string;
   description: string;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description }) => (
-    <div className="bg-brand-primary p-8 text-center flex flex-col items-center group transition-all duration-300 hover:bg-white/5 rounded-lg tilt-card">
-        <div className="text-brand-accent-500 mb-4 transition-transform duration-300 group-hover:scale-110">
+    <div className="bg-white p-8 text-center flex flex-col items-center group transition-all duration-300 hover:shadow-xl rounded-lg shadow-md tilt-card">
+        <div className="text-brand-accent mb-4 transition-transform duration-300 group-hover:scale-110">
             {icon}
         </div>
         <h3 className="text-2xl font-display font-bold text-brand-heading mb-3">{title}</h3>
@@ -53,10 +54,10 @@ const ExpertiseSection: React.FC = () => {
     ];
 
     return (
-        <section className="bg-brand-primary py-20 lg:py-32">
+        <section className="bg-gray-50 py-20 lg:py-32">
             <div className="max-w-screen-xl mx-auto px-4">
                 <div className="text-center mb-12">
-                     <h4 className="font-bold text-brand-accent-500 uppercase tracking-widest font-body mb-2">Unsere Expertise</h4>
+                     <h4 className="font-bold text-brand-accent uppercase tracking-widest font-body mb-2">Unsere Expertise</h4>
                     <h2 className="text-3xl lg:text-4xl font-black text-brand-heading font-display mt-2 mb-4">Unsere Rechtsgebiete</h2>
                     <p className="text-brand-gray max-w-3xl mx-auto text-lg font-body">
                         Wir vertreten sowohl Arbeitgeber als auch Arbeitnehmer mit strategischem Weitblick und juristischer Präzision.

@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
       .tilt-card {
         transform-style: preserve-3d;
@@ -20,24 +20,21 @@
         theme: {
           extend: {
             colors: {
-              'brand-primary': '#0F172B', // Tiefes Marineblau
-              'brand-light': '#F8F9FA', // Sanftes Off-white
+              'brand-primary': '#003366', // Kanzlei-Blau
+              'brand-light': '#FFFFFF', // Weiß
               'brand-accent': {
-                DEFAULT: '#D1A14D', // Elegantes Gold
-                '500': '#D1A14D',
-                '600': '#B98A3B', // Dunkleres Gold für Hover
+                DEFAULT: '#FA8C2A', // Orange
+                '600': '#E17B25',
               },
-              'brand-action': {
-                DEFAULT: '#e7474d', // Kräftiges Rot für CTAs
-                '600': '#c43a40', // Dunkleres Rot für Hover
-              },
-              'brand-gray': '#CED4DA', // Helles Grau für Fließtext im Dark Mode
-              'brand-heading': '#FFFFFF',
-              'brand-dark-text': '#212529', // Dunkler Text für helle Hintergründe
+              'brand-cta': '#FA8C2A', // Orange für CTA
+              'brand-cta-hover': '#E17B25',
+              'brand-gray': '#6c757d', // Textgrau
+              'brand-dark-text': '#212529', // Dunkler Text
+              'brand-heading': '#003366', // Blau für Überschriften
             },
             fontFamily: {
-              'display': ['Playfair Display', 'serif'],
-              'body': ['Montserrat', 'sans-serif'],
+              'display': ['Lato', 'sans-serif'],
+              'body': ['Lato', 'sans-serif'],
             },
             animation: {
               'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
@@ -63,7 +60,7 @@
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-brand-light font-body text-brand-dark-text antialiased">
+  <body class="bg-white font-body text-brand-dark-text antialiased">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
     <script>
@@ -80,7 +77,7 @@
             card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
           });
           card.addEventListener('mouseleave', () => {
-            card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
           });
         });
       });

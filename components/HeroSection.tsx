@@ -4,14 +4,15 @@ interface HeroSectionProps {
   onNavigate: () => void;
 }
 
-const ValueProp: React.FC<{ icon: JSX.Element; title: string; children: React.ReactNode }> = ({ icon, title, children }) => (
-  <div className="flex items-start text-left p-6 bg-brand-primary/50 backdrop-blur-sm rounded-lg border border-white/10">
-    <div className="flex-shrink-0 h-10 w-10 text-brand-accent-500 mr-4">
+// Fix: Changed JSX.Element to React.ReactNode to resolve "Cannot find namespace 'JSX'" error.
+const ValueProp: React.FC<{ icon: React.ReactNode; title: string; children: React.ReactNode }> = ({ icon, title, children }) => (
+  <div className="flex items-start text-left p-6 bg-white/80 backdrop-blur-md rounded-lg border border-white/20">
+    <div className="flex-shrink-0 h-10 w-10 text-brand-accent mr-4">
       {icon}
     </div>
     <div>
-      <h3 className="text-lg font-body font-bold text-brand-heading">{title}</h3>
-      <p className="mt-1 text-brand-gray">{children}</p>
+      <h3 className="text-lg font-body font-bold text-brand-primary">{title}</h3>
+      <p className="mt-1 text-brand-dark-text">{children}</p>
     </div>
   </div>
 );
@@ -36,13 +37,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
             transform: `translateY(${offsetY * 0.5}px)`
         }}
        />
-      <div className="absolute inset-0 bg-brand-primary opacity-70"></div>
+      <div className="absolute inset-0 bg-brand-primary opacity-40"></div>
       
       <div className="relative z-10 px-4 flex-grow flex flex-col items-center justify-center">
-         <h1 className="text-5xl md:text-6xl lg:text-7xl font-black font-display leading-tight mb-4 text-brand-heading">
+         <h1 className="text-5xl md:text-6xl lg:text-7xl font-black font-display leading-tight mb-4 text-white">
             Ihr Recht. Unsere Kanzlei.
         </h1>
-        <p className="text-xl md:text-2xl text-brand-gray mb-8 font-light max-w-3xl mx-auto font-body">
+        <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light max-w-3xl mx-auto font-body">
             Fachanwälte für Arbeitsrecht in Schondorf am Ammersee. Kompetent. Engagiert. Auf Ihrer Seite.
         </p>
         <button

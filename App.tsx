@@ -56,7 +56,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-brand-light font-body text-brand-dark-text">
+    <div className="bg-white font-body text-brand-dark-text">
       <Disclaimer />
       <Header onNavigate={scrollToSection} />
       <main>
