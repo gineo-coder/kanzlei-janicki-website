@@ -1,10 +1,10 @@
 import type { Lawyer, NewsArticle } from './types';
 
 export const NAV_LINKS = [
-  { name: 'Kanzlei', key: 'kanzlei' },
-  { name: 'Rechtsanwälte', key: 'rechtsanwaelte' },
-  { name: 'Arbeitsrecht', key: 'arbeitsrecht' },
-  { name: 'Aktuelles', key: 'aktuelles' },
+  { name: 'Kanzlei', path: '/#kanzlei' },
+  { name: 'Rechtsanwälte', path: '/rechtsanwaelte' },
+  { name: 'Rechtsgebiete', path: '/rechtsgebiete' },
+  { name: 'Aktuelles', path: '/#aktuelles' },
 ];
 
 export const TEAM_MEMBERS: Lawyer[] = [
