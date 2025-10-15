@@ -36,10 +36,10 @@ const LawyerDetailPage: React.FC = () => {
 
       <div className="bg-white py-20 lg:py-24">
         <div className="max-w-4xl mx-auto px-4">
-           <div className="prose max-w-none text-brand-gray text-lg lg:text-xl">
-                <p>{lawyer.description}</p>
-                {/* Hier könnten weitere Details, wie z.B. Lebenslauf, Veröffentlichungen etc. stehen */}
-           </div>
+           <div 
+                className="prose max-w-none text-brand-gray text-lg lg:text-xl"
+                dangerouslySetInnerHTML={{ __html: lawyer.description }}
+            />
            <div className="mt-12 pt-8 border-t border-gray-200">
                 <Link to="/rechtsanwaelte" className="font-semibold text-brand-accent hover:text-brand-accent-600 self-start font-body transition-colors">
                     &larr; Zurück zur Anwaltsübersicht

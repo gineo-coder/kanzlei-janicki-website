@@ -5,7 +5,14 @@ export const NAV_LINKS = [
   { name: 'Home', path: '/' },
   { name: 'Kanzlei', path: '/#kanzlei' },
   { name: 'Rechtsgebiete', path: '/rechtsgebiete' },
-  { name: 'Anwälte', path: '/rechtsanwaelte' },
+  { 
+    name: 'Anwälte', 
+    path: '/rechtsanwaelte',
+    sublinks: [
+      { name: 'Dr. Jörg Janicki', path: '/rechtsanwaelte/dr-joerg-janicki' },
+      { name: 'Jonas Jung', path: '/rechtsanwaelte/jonas-jung' },
+    ]
+  },
   { name: 'Aktuelles', path: '/#aktuelles' },
 ];
 
@@ -57,20 +64,26 @@ export const SERVICES = [
 
 export const TEAM_MEMBERS: Lawyer[] = [
   {
-    name: 'Dr. Jochen Janicki',
+    name: 'Dr. Jörg Janicki',
     title: 'Rechtsanwalt',
-    imageUrl: 'https://www.janicki-arbeitsrecht.de/files/kanzlei/jochen-janicki.jpg',
+    imageUrl: 'https://www.janicki-arbeitsrecht.de/files/kanzlei/fachanwalt-dr-janicki.jpg',
     specialization: 'Fachanwalt für Arbeitsrecht',
-    slug: 'dr-jochen-janicki',
-    description: 'Dr. Jochen Janicki ist Gründer und Namensgeber der Kanzlei. Er ist seit über 20 Jahren ausschließlich im Arbeitsrecht tätig und verfügt über eine außergewöhnliche Expertise in allen Bereichen des Individual- und Kollektivarbeitsrechts. Seine Mandanten schätzen seine strategische Weitsicht, sein Verhandlungsgeschick und seine Fähigkeit, auch komplexe Sachverhalte verständlich zu machen. Dr. Janicki vertritt sowohl Arbeitgeber als auch Führungskräfte und Arbeitnehmer und kennt daher die Perspektiven beider Seiten, was ihm in Verhandlungen einen entscheidenden Vorteil verschafft. Er ist zudem ein gefragter Referent für arbeitsrechtliche Schulungen und Autor zahlreicher Fachpublikationen.'
+    slug: 'dr-joerg-janicki',
+    description: `Dr. Jörg Janicki, geboren 1968 in München, studierte nach dem Abitur und Grundwehrdienst Rechtswissenschaften an der Ludwig-Maximilians-Universität München. Im Anschluss an das erste juristische Staatsexamen absolvierte er das Referendariat im Oberlandesgerichtsbezirk München. Das zweite juristische Staatsexamen legte er 1996 ab. Herr Dr. Janicki ist seit 1997 als Rechtsanwalt zugelassen.
+    <br/><br/>
+    Seit Beginn seiner anwaltlichen Tätigkeit ist Herr Dr. Janicki ausschließlich auf dem Gebiet des Arbeitsrechts tätig. Aufgrund seiner nachgewiesenen besonderen theoretischen Kenntnisse und praktischen Erfahrungen wurde ihm von der Rechtsanwaltskammer München gestattet, die Bezeichnung „Fachanwalt für Arbeitsrecht“ zu führen.
+    <br/><br/>
+    Herr Dr. Janicki promovierte bei Prof. Dr. Volker Rieble, dem Direktor des Zentrums für Arbeitsbeziehungen und Arbeitsrecht (ZAAR) an der Ludwig-Maximilians-Universität München, zu einem betriebsverfassungsrechtlichen Thema. Er ist Mitglied der Arbeitsgemeinschaft Arbeitsrecht im Deutschen Anwaltverein sowie im Münchener Anwaltverein.
+    <br/><br/>
+    Herr Dr. Janicki vertritt und berät sowohl Arbeitgeber als auch Arbeitnehmer, was ihm einen besonderen Einblick in die jeweiligen Denk- und Herangehensweisen der Gegenseite verschafft und damit maßgeblich zur Entwicklung der optimalen Strategie für seinen Mandanten beiträgt.`
   },
   {
-    name: 'Dr. Eva Neumann',
-    title: 'Rechtsanwältin',
-    imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    specialization: 'Fachanwältin für Arbeitsrecht',
-    slug: 'dr-eva-neumann',
-    description: 'Dr. Eva Neumann verstärkt seit 2018 das Team der Kanzlei Janicki. Sie hat sich auf die Beratung und Vertretung von Arbeitnehmern und Betriebsräten spezialisiert. Mit großem Engagement und juristischer Präzision setzt sie sich für die Rechte ihrer Mandanten ein, insbesondere in Kündigungsschutzverfahren und bei der Aushandlung von Aufhebungsverträgen. Dr. Neumann legt besonderen Wert auf eine persönliche und vertrauensvolle Zusammenarbeit. Sie nimmt sich Zeit, die individuelle Situation ihrer Mandanten zu verstehen, um die bestmögliche Strategie zu entwickeln. Ihre empathische Art und ihre kämpferische Natur machen sie zu einer starken Partnerin an Ihrer Seite.'
+    name: 'Jonas Jung',
+    title: 'Rechtsanwalt',
+    imageUrl: 'https://www.janicki-arbeitsrecht.de/files/kanzlei/janicki-arbeitsrecht-4.jpg',
+    specialization: 'Schwerpunkt Arbeitsrecht',
+    slug: 'jonas-jung',
+    description: 'Jonas Jung ist seit 2020 als Rechtsanwalt zugelassen und verstärkt seitdem das Team der Kanzlei. Sein Studium der Rechtswissenschaften absolvierte er an der Universität Augsburg mit einem klaren Fokus auf das Arbeitsrecht, welches er im Referendariat weiter vertiefte. Herr Jung berät mit großem Engagement und juristischer Präzision sowohl Arbeitnehmer als auch Arbeitgeber in allen individual- und kollektivrechtlichen Fragestellungen. Seine Mandanten schätzen seine Fähigkeit, komplexe Sachverhalte schnell zu erfassen und verständliche, praxisnahe Lösungen zu entwickeln. Er legt besonderen Wert auf eine transparente und vertrauensvolle Kommunikation, um gemeinsam mit seinen Mandanten die bestmöglichen Ergebnisse zu erzielen.'
   }
 ];
 
