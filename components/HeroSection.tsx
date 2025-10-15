@@ -40,21 +40,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
       <div className="absolute inset-0 bg-brand-primary opacity-25"></div>
       
       <div className="relative z-10 px-4 flex-grow flex flex-col items-center justify-center">
-         <h1 
-            className="text-5xl md:text-6xl lg:text-7xl font-black font-display leading-tight mb-4 text-white"
-            style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
+        <div className="bg-black/20 backdrop-blur-sm p-8 rounded-lg max-w-4xl">
+           <h1 
+              className="text-5xl md:text-6xl lg:text-7xl font-black font-display leading-tight mb-4 text-white"
+              style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }}
+            >
+              Ihr Recht. Unsere Kanzlei.
+          </h1>
+          <p 
+              className="text-xl md:text-2xl text-gray-100 font-light max-w-3xl mx-auto font-body"
           >
-            Ihr Recht. Unsere Kanzlei.
-        </h1>
-        <p 
-            className="text-xl md:text-2xl text-gray-200 mb-8 font-light max-w-3xl mx-auto font-body"
-            style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)' }}
-        >
-            Fachanwälte für Arbeitsrecht in Schondorf am Ammersee. Kompetent. Engagiert. Auf Ihrer Seite.
-        </p>
+              Fachanwälte für Arbeitsrecht in Schondorf am Ammersee. Kompetent. Engagiert. Auf Ihrer Seite.
+          </p>
+        </div>
         <button
             onClick={onNavigate}
-            className="inline-flex justify-center items-center py-3 px-8 text-base font-bold text-center text-white rounded-md border-2 border-white hover:bg-white hover:text-brand-primary focus:ring-4 focus:ring-gray-300/50 transition-colors transform hover:scale-105"
+            className="mt-8 inline-flex justify-center items-center py-3 px-8 text-base font-bold text-center text-white rounded-md border-2 border-white hover:bg-white hover:text-brand-primary focus:ring-4 focus:ring-gray-300/50 transition-colors transform hover:scale-105"
         >
             Mehr über uns
         </button>
