@@ -22,7 +22,7 @@ const ArticleCard: React.FC<{ article: NewsArticle }> = ({ article }) => (
 
 const NewsSection: React.FC = () => {
   return (
-    <section className="bg-white py-20 lg:py-32">
+    <section className="bg-gray-50 py-20 lg:py-32">
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="text-center mb-12">
             <h4 className="font-bold text-brand-accent uppercase tracking-widest font-body mb-2">Aktuelles</h4>

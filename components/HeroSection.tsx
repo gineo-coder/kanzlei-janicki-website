@@ -37,13 +37,19 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
             transform: `translateY(${offsetY * 0.5}px)`
         }}
        />
-      <div className="absolute inset-0 bg-brand-primary opacity-40"></div>
+      <div className="absolute inset-0 bg-brand-primary opacity-25"></div>
       
       <div className="relative z-10 px-4 flex-grow flex flex-col items-center justify-center">
-         <h1 className="text-5xl md:text-6xl lg:text-7xl font-black font-display leading-tight mb-4 text-white">
+         <h1 
+            className="text-5xl md:text-6xl lg:text-7xl font-black font-display leading-tight mb-4 text-white"
+            style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
+          >
             Ihr Recht. Unsere Kanzlei.
         </h1>
-        <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light max-w-3xl mx-auto font-body">
+        <p 
+            className="text-xl md:text-2xl text-gray-200 mb-8 font-light max-w-3xl mx-auto font-body"
+            style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)' }}
+        >
             Fachanwälte für Arbeitsrecht in Schondorf am Ammersee. Kompetent. Engagiert. Auf Ihrer Seite.
         </p>
         <button
